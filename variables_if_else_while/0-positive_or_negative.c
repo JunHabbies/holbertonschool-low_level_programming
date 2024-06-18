@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdiolib.h>
 
 int main(void)
 {
