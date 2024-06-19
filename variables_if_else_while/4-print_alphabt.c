@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-// Fonction ft_print qui imprime toutes les lettres de 'a' à 'z'
-// à l'exception des lettres 'e' et 'q'.
 
 void ft_print (void)
 {
@@ -18,7 +16,6 @@ void ft_print (void)
         printf("\n");
 }
 
-// Fonction principale main
 
 int main(void)
 {
