@@ -20,7 +20,7 @@ void ft_print (void)
 }
 
 /**
- * ft_print_upper - Affiche les lettres de 'A' à 'Z' suivies d'un saut de ligne
+ * ft_print_upper - Affiche les lettres de 'A' à 'Z' et un saut de ligne
  *
  * Description:
  * Cette fonction affiche les lettres de l'alphabet en majuscule
