@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * ft_print - Prints all lowercase letters from 'a' to 'z'
  *            except for 'e' and 'q'.
  */
@@ -20,7 +20,7 @@ void ft_print (void)
 	printf("\n");
 }
 
-/*
+/**
  * main - Entry point of the program
  *
  * Return: Always returns 0 to indicate successful execution
