@@ -2,33 +2,6 @@
 #include <unistd.h>
 
 /**
- * print_base16 - Prints the numbers 0-9 and letters a-f in hexadecimal
- *                format followed by a space
- *
- * Return: void
- */
-
-void print_base16(void)
-{
-	int i = 0;
-
-	while (i < 16)
-	{
-		if (i < 10)
-		{
-			write(1, &('0' + i), 1);
-		}
-		else
-		{
-			write(1, &('a' + (i - 10)), 1);
-		}
-		write(1, " ", 1);
-		i++;
-	}
-	write(1, "\n", 1);
-}
-
-/**
  * main - Entry point of the program
  *
  * Return: Always 0 (Success)
@@ -36,6 +9,18 @@ void print_base16(void)
 
 int main(void)
 {
-	print_base16();
+	int a;
+	char c;
+
+	for (a = 0; a <= 9; a++)
+	{
+		putchar ('0' + a);
+	}
+
+	for ( c = 'a'; c <= 'f'; c++)
+	{
+		putchar (c);
+	}
+	putchar ('\n');
 	return (0);
 }
