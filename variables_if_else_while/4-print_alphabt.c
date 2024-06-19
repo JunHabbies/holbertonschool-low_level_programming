@@ -1,24 +1,33 @@
 #include <stdio.h>
 
+/*
+ * ft_print - Prints all lowercase letters from 'a' to 'z'
+ *            except for 'e' and 'q'.
+ */
 
 void ft_print (void)
 {
-        int a = 'a';
+	int a = 'a';
 
-        while (a <= 'z')
-        {
+	while (a <= 'z')
+	{
 		if (a != 'e' && a != 'q')
 		{
-                printf("%c", a);
+			printf("%c", a);
 		}
-                a++;
-        }
-        printf("\n");
+		a++;
+	}
+	printf("\n");
 }
 
+/*
+ * main - Entry point of the program
+ *
+ * Return: Always returns 0 to indicate successful execution
+ */
 
 int main(void)
 {
-        ft_print();
-        return (0);
+	ft_print();
+	return (0);
 }
