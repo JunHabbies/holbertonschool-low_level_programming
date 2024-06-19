@@ -25,7 +25,7 @@ void ft_print (void)
  *
  * Description:
  * Fonction principale du programme qui appelle ft_print pour afficher
- * les lettres de l'alphabet et retourne 0 pour indiquer une fin normale du programme.
+ * les lettres de l'alphabet et retourne 0
  *
  * Return: 0 si le programme s'exécute correctement
  */
