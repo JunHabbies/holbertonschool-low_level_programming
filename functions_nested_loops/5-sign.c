@@ -1,5 +1,15 @@
 #include "main.h"
 
+/**
+ * print_sign - Prints the sign of a number.
+ * @c: The number to check.
+ *
+ * Return:
+ *  +1 if @c is positive,
+ *   0 if @c is zero,
+ *  -1 if @c is negative.
+ */
+
 int print_sign(int c)
 {
 	if (c > 0)
