@@ -2,9 +2,6 @@
 
 /**
  * jack_bauer - Prints every minute of the day of Jack Bauer.
- * @a: Unused parameter.
- *
- * Return: Always 0.
  */
 void jack_bauer(void)
 {
