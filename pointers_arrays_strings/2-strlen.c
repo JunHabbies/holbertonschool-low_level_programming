@@ -1,7 +1,17 @@
 #include "main.h"
 
-int _strlen(char *s);
+/**
+ * _strlen - Returns the length of a string
+ * @s: The string to measure
+ *
+ * Return: The length of the string
+ */
+int _strlen(char *s)
 {
-	size_t strlen(const char *str;)
+	int length = 0;
 
+	while (s[length] != '\0') {
+		length++;
+	}
+	return length;
 }
