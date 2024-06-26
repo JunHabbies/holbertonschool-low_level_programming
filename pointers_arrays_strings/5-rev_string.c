@@ -1,28 +1,23 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * Fonction pour inverser une chaîne de caractères.
- * Parameters:
- *   s: Pointeur vers la chaîne de caractères à inverser.
- * Returns: void
+ * rev_string - reverse a string
+ * @s: input string
+ * Return: void
  */
-void rev_string(char *s) {
-	// Vérifier si le pointeur est NULL
-	if (s == NULL) {
-		return;
-	}
 
-	// Trouver la longueur de la chaîne
-	int length = 0;
-	while (s[length] != '\0') {
+void rev_string(char *s)
+{
+	int length = 0, i = 0;
+	char c;
+
+	while (s[i++])
 		length++;
-	}
 
-	// Inverser la chaîne en utilisant un tableau temporaire
-	for (int i = 0; i < length / 2; i++) {
-		char temp = s[i];
+	for (i = length - 1; i >= length / 2; i--)
+	{
+		c = s[i];
 		s[i] = s[length - i - 1];
-		s[length - i - 1] = temp;
+		s[length - i - 1] = c;
 	}
 }
-
