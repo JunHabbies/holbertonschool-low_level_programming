@@ -1,34 +1,28 @@
-#include "main.h" // Assumant que la fonction swap est déclarée ou définie ici
+#include <stdio.h>
 
-void swap(char *a, char *b)
-{
-    char temp = *a;
-    *a = *b;
-    *b = temp;
-}
+/**
+ * Fonction pour inverser une chaîne de caractères.
+ * Parameters:
+ *   s: Pointeur vers la chaîne de caractères à inverser.
+ * Returns: void
+ */
+void rev_string(char *s) {
+	// Vérifier si le pointeur est NULL
+	if (s == NULL) {
+		return;
+	}
 
-void rev_string(char *s)
-{
-    if (s == NULL)
-        return;
+	// Trouver la longueur de la chaîne
+	int length = 0;
+	while (s[length] != '\0') {
+		length++;
+	}
 
-    char *start = s;
-    char *end = s;
-
-    // Trouver la fin de la chaîne
-    while (*end != '\0')
-    {
-        end++;
-    }
-
-    end--; // Déplacer end d'un pas pour pointer le dernier caractère avant le '\0'
-
-    // Inverser la chaîne en échangeant les caractères à partir des extrémités
-    while (start < end)
-    {
-        swap(start, end);
-        start++;
-        end--;
-    }
+	// Inverser la chaîne en utilisant un tableau temporaire
+	for (int i = 0; i < length / 2; i++) {
+		char temp = s[i];
+		s[i] = s[length - i - 1];
+		s[length - i - 1] = temp;
+	}
 }
 
