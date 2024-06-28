@@ -1,30 +1,36 @@
-#include "main.h"
+#include <stdio.h>
 #include <string.h>
 
 /**
- * puts_half - Prints the second half of a string.
- * @str: Input string.
+ * puts_half - prints the second half of a string followed by a new line
+ * @str: pointer to the string to be printed
+ *
+ * Description: If the number of characters is odd, the function should print
+ * the last n characters of the string, where n = (length_of_the_string -1)/
  */
 
 void puts_half(char *str)
 {
-	int i;
-	int halflen;
-	int len = strlen(str);
+	int length = 0;
+	int i, start_index;
 
-	if (len % 2 == 0)
+	while (str[length] != '\0')
 	{
-		halflen = len / 2;
+		length++;
+	}
+
+	if (length % 2 == 0)
+	{
+		start_index = length / 2;
 	}
 	else
 	{
-		halflen = (len + 1) / 2;
+		start_index = (length - 1) / 2 + 1;
 	}
 
-	for (i = halflen; i < len; i++)
+	for (i = start_index; i < length; i++)
 	{
-		_putchar(str[i]);
+		putchar(str[i]);
 	}
-
-	_putchar('\n');
+	putchar('\n');
 }
